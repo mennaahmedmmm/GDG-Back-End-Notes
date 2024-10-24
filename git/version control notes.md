@@ -250,5 +250,6 @@ git push <remote-name>
 - **Tutorial Video**: [AraBigData Git Repository](https://github.com/ahmedsami76/AraBigData/tree/main/Git)
 - **Blog on Writing Good Commits**: [Good Commit vs Bad Commit](https://dev.to/sheraz4194/good-commit-vs-bad-commit-best-practices-for-git-1plc?ref=dailydev)
 - **Git cheat sheet**: [bible of git](https://education.github.com/git-cheat-sheet-education.pdf)
+- **Arabic resource**:[eqraa](https://github.com/Eqraatech/Software-Engineering-In-Arabic?tab=readme-ov-file#introduction-into-version-control)
 
 ---
