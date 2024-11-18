@@ -3,26 +3,15 @@
 * It is abbreviation of Hyper Text Markup Language 
 * It used to define the structure of webpage 
 * **
-# HTML main structure 
-* File extension is .html or .htm (The entry point of any webpage)
-```html
-<!DOCTYPE HTML>
-<html>
-		<head>   </head>  not visible 
-		<body>   </body>  visible 
-</html>
-The <html> element is the root element of an HTML page
-The <head> element contains meta-information about the HTML page
-The <body> element defines the document's body and is a container for all the visible contents.
-```
-**To make the html structure quickly from keyboard press _shift+1 then press enter_**
-* **
-### How to make comments in HTML ? 
-```html 
-<!-- This is a comment -->
-```
-* OR press **ctrl+?** on keyboard 
-* **
+# Why tags in HTML? 
+* Imagine you’re building something with LEGO blocks. Each block has a specific shape and purpose—some make walls, some make doors, and some make windows.
+
+* In HTML, tags are like those LEGO blocks. We use them to build and organize a webpage. Each tag has a specific job:
+
+* Some tags add text or headings (like titles).
+* Some tags add images or videos.
+* Other tags help make lists, links, or buttons.
+***
 ## Tags 
 
 _Nested tages_
@@ -35,17 +24,7 @@ _Self Closed tags_
 ```html
 <tag/>
 ``` 
-* ** 
-HTML elements are two types : Block elements and Inline elements
-- **A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.**
-
-- **A block-level element always takes up the full width available (stretches out to the left and right as far as it can).**
-    - Block elements such as  
-    ![Block_elements](images/Screenshot%202024-10-26%20160304.png)
-    - Inline elements such as  
-    ![Inline_elements](images/Screenshot%202024-10-26%20160432.png)  
-
-* ** 
+***
 ## Attributes
 * All HTML elements can have attributes
 * Attributes provide additional information about elements
@@ -56,6 +35,77 @@ HTML elements are two types : Block elements and Inline elements
 <a href="www.google.com">Google</a>
 <!--href is an attribute here-->
 ```
+***
+# HTML main structure 
+* File extension is .html or .htm (The entry point of any webpage)
+```html
+<!DOCTYPE HTML>
+<html>
+		<head>   </head>  not visible 
+		<body>   </body>  visible 
+</html>
+The <html> element is the root element of an HTML page
+The <head> element contains meta-information about the HTML page
+The <body> element defines the document's body and is a container for all the visible contents.
+```
+# What is written in head: 
+* Meta tags: 
+      - Tell search engines what your page is about.
+      - Make your page look good on phones.
+      - Create nice previews when shared on social media.
+      **Examples of meta tags**: 
+    
+```html
+<!-- Tell the browser how to read text,
+This ensures special characters (like "😊") show up properly. -->
+      <meta charset="UTF-8">
+```
+***
+
+```html
+<!-- Describe your page for search engines
+This is like a summary of what your page is about .html -->
+<meta name="description" content="Learn HTML easily with our step-by-step tutorials.">
+```
+***
+
+```html
+<!-- Make your page look good on phones
+This adjusts your webpage to fit mobile screens nicely. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+***
+
+* Title tag: 
+```html
+<!-- Tells the title of webpage -->
+<title>Document<title>
+```
+***
+
+* Link tag: 
+```html
+<link rel="stylesheet" href="path of file you want to link">
+```
+***
+* **To make the html structure quickly from keyboard press _shift+1 then press enter_**
+### How to make comments in HTML ? 
+```html 
+<!-- This is a comment -->
+```
+* OR press **ctrl+?** on keyboard 
+* ** 
+HTML elements are two types : Block elements and Inline elements
+- **A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.**
+
+- **A block-level element always takes up the full width available (stretches out to the left and right as far as it can).**
+- **An inline element in HTML is an element that does not start on a new line and only takes up as much width as necessary. These elements are typically used for smaller pieces of content within a block of text, like words or phrases, and they don’t disrupt the flow of content around them.**
+    - Block elements such as  
+    ![Block_elements](images/Screenshot%202024-10-26%20160304.png)
+    - Inline elements such as  
+    ![Inline_elements](images/Screenshot%202024-10-26%20160432.png)  
+
+* ** 
 
 
 
@@ -72,12 +122,18 @@ _h1->h6_ , they differ from each other according to their importance and **every
 ```html
 <img src="image path" alt="alternative text appear if image is not loaded"/>
 ```
+* **To make any path appear automatically press ctrl+space**
+
 * **
 4. Anchor tag 
 ```html
 <a href="www.google.com">Google</a>
 ```
 _To add links_
+**Anchor target attribute:**
+`_blank`: Opens the link in a new tab or window.
+`_self`: Default value, Opens the link in the same tab or window 
+
 * **
 5. Break line `<br/>`
 * **
@@ -135,7 +191,7 @@ Description lists:
 * **
 9. Tables: 
 * Table main structure is thead, tbody, tfoot
-* thead and tfoof is a option 
+* thead and tfoot is a option 
 ```html 
 <table border="1" width="100%" height="200">
          <tr>
@@ -163,10 +219,10 @@ Description lists:
          </tr>
       </table>
 ```
-- **table col span --** To make a cell span over multiple columns, use the `colspan` attribute
+- **table col span:** To make a cell span over multiple columns, use the `colspan` attribute
 - **Note:** The value of the `colspan` attribute represents the number of columns to span.
 **example**: 
-![colspan](images/image.png)
+![colspan](images/colspan.png)
 ```html
 <table>
   <tr>
@@ -220,16 +276,8 @@ Description lists:
       </table>
 ```
 * **
-10.Buttons:  
-- One of its common attributes is type attribute that has (submit, reset, button value)
-- The default attribute of button is submit
-```html
-	<button type="submit"> Register </button>
-	<button type="reset"> Reset </button>
-	<button type="button"> Button </button>
-```
-* **  
-11. Forms:
+ 
+10. Forms:
 - **Important form attributes (action and method)**
 1. **Action Attribute**:
   - The action attribute defines the action to be performed when the form is submitted.
@@ -262,6 +310,8 @@ _Notes on POST_:
 - Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
 - POST has no size limitations, and can be used to send large amounts of data.
 * **
+![get_and_post](images/get%20and%20post.png)
+***
 - **Form inputs (text, number, email, pass, submit, reset,  button submit, button reset)**
     - any input has 3 attributes required (type, name , value)  but the value give by user here
     - use attribute name to contain value and send it to backend
@@ -368,11 +418,22 @@ _Notes on POST_:
 - The `id` attribute is needed to associate the drop-down list with a label.
 - The `<option>` tags inside the `<select>` element define the available options in the drop-down list.
 * ** 
+11.Buttons:  
+- One of its common attributes is type attribute that has (submit, reset, button value)
+- The default attribute of button is submit
+```html
+	<button type="submit"> Register </button>
+	<button type="reset"> Reset </button>
+	<button type="button"> Button </button>
+```
+* ** 
 For more information you can visit:
-[W3Schools](https://www.w3schools.com/html/) **Start with it if you are new to programming**
-[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) **For more advanced topics**
+- [W3Schools](https://www.w3schools.com/html/) **Start with it if you are new to programming**
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) **For more advanced topics**
+- [Osama El Zero](https://youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&si=TaHoiCF2BAesLtOO)
+- [AbdelRahman Gamal](https://youtube.com/playlist?list=PLknwEmKsW8OtLRQPTLms79499meY2D6ij&si=1ZJKtNqNqb07-XJ2)
 
-- Extensions in vs code will make coding easier and faster 🚀
+- **Extensions in vs code will make coding easier and faster 🚀**
    
    - Auto import 
    - Auto Rename Tag
