@@ -233,6 +233,43 @@ body {
   background-image: url("image path");
 }
 ```
+***
+
+## **CSS Box Model: Key Properties**  
+
+![synatx](images/margin.jpg)
+
+### **1. Width & Height**  
+- Define the content size (excludes padding, border, margin by default).  
+- Example:  
+  ```css
+  width: 200px;
+  height: 100px;
+  ```
+
+### **2. Padding**  
+- Space **inside** the box between content and border.  
+- Example:  
+  ```css
+  padding: 10px; /* All sides */
+  padding: 5px 10px; /* Top-Bottom, Left-Right */
+  ```
+
+### **3. Border**  
+- Surrounds the content and padding.  
+- Example:  
+  ```css
+  border: 2px solid black;
+  ```
+
+### **4. Margin**  
+- Space **outside** the box, separating it from other elements.  
+- Example:  
+  ```css
+  margin: 20px; /* All sides */
+  margin: 10px auto; /* Center horizontally */
+  ```
+
 *** 
 ## CSS Display:
 - **inline** :Displays an element as an inline element (like <span>). Any height and width properties will have no effect. This is default.
