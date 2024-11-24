@@ -324,6 +324,48 @@ HTTP/1.1 504 Gateway Timeout
 - **5xx Server Errors:** Issues on the server’s side.
   - 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable, 504 Gateway Timeout.
  
+
+# Example of a Real-Life HTTP Response (Login Request)
+
+## When you attempt to log in to a website:
+
+### Request:
+
+```http
+POST /login HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "username": "user123",
+  "password": "password123"
+}
+```
+### Possible Response 1 (Successful Login):
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 45
+
+{
+  "status": "success",
+  "message": "Login successful",
+  "user_id": 1234
+}
+```
+### Possible Response 1 (Invalid Credentials):
+```http
+HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Content-Length: 75
+
+{
+  "status": "error",
+  "message": "Invalid username or password"
+}
+```
+
 ## Resources
 
 - **Mozila web docs**:
