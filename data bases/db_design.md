@@ -3,6 +3,7 @@
 # `Databases Notes`
 
 ## **Database Design**
+![Database Keys](./media/database-cheatsheet-system-design.png "A title")
 
 ### **Overview**
 Designing a database is foundational to effective data management. The main stages of database design include:
