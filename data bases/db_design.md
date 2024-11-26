@@ -67,3 +67,15 @@ The final phase involves building and maintaining the database:
 - **Creating the Database Schema**: Implement the physical design with tables, `constraints`, and relationships.
 - **Data Population**: Load data from initial sources, ensuring quality and integrity.
 - **Ongoing Monitoring**: Regularly check `performance`, `security`, and apply updates as needed.
+
+---
+## Resources  
+
+1. **Database Design (Arabic Video)**  
+   [Watch on YouTube](https://youtu.be/gZ5iYMkrcfQ?si=oLzh3D32CIpV7shM)  
+
+2. **Fundamentals of Database (Book)**  
+   [Download PDF](https://auhd.edu.ye/upfiles/elibrary/Azal2020-01-22-12-28-11-76901.pdf)  
+
+3. **Advanced Database Design (Video Playlist)**  
+   [Watch the Playlist on YouTube](https://youtube.com/playlist?list=PL_c9BZzLwBRK0Pc28IdvPQizD2mJlgoID&si=R4A5pKcVzpNGJFjA)  
