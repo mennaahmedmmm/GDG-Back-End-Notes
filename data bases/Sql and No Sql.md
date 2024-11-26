@@ -24,7 +24,6 @@ Document-oriented databases store data in JSON-like documents. Each document is 
    - MongoDB automatically creates a database when data is inserted.
   
   2. **Insert Document**
-  
 
   3. **Query Documents**
   
@@ -48,14 +47,10 @@ Document-oriented databases store data in JSON-like documents. Each document is 
 
 
 # **Additional Learning Resources**
+-
+- [sql , nosql video](https://youtu.be/eng2ZX78Oiw?si=hS3e_FXSvK6GWK-W)
 
 - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) : A comprehensive course for beginners explaining the basics and advanced SQL
-
-- [SQLBolt](https://sqlbolt.com/) : An interactive site offering lessons and practical exercises to practice SQL
-
-- [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial) : Advanced SQL lessons for those interested in analytics and reporting
-
-- [LeetCode SQL Practice](https://leetcode.com/studyplan/top-sql-50/) : Practice common SQL questions asked in interviews
   
 - [MongoDB Documentation](https://www.mongodb.com/docs/manual/) : Comprehensive guide and tutorials on MongoDB.
 
