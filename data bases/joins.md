@@ -63,3 +63,8 @@ Joins are used to combine rows from two or more tables based on a related column
 - Joins work using relationships between tables, often defined by primary and foreign keys.
 - They help in creating complex queries to extract combined data.
 - Choosing the right join depends on the scenario and desired output.
+
+## **References**
+- [Joins - W3 Schools](https://www.w3schools.com/sql/sql_join.asp)
+- [Joins - GeeksforGeeks](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/)  
+- [Joins - YouTube](https://youtu.be/4RmzfVUVxYI?si=mtPLDoWyVDDH43R7)
