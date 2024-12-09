@@ -118,3 +118,7 @@
    |-------|----------|
    | 1     | Jumping  |
    | 1     | Flying   |
+
+**Resources**
+   [Mohammed Desoky](https://youtube.com/playlist?list=PLB8C3FC57C924A7D0&si=RMcTNblFrunC03Tq) 
+   [Amr El Helw](https://youtu.be/1HEHa_EJa0k?si=Hxh5l0p9aykV_p5i)
